@@ -15,4 +15,11 @@ describe('AppController', () => {
   it('should be defined', () => {
     expect(controller).toBeDefined();
   });
+
+  describe('home', () => {
+    it('should return main string', () => {
+      const home = controller.home();
+      expect(home).toEqual('welcome to my Movie');
+    });
+  });
 });
